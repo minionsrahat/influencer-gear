@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@100&family=Playfair+Display:ital,wght@1,500&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@100&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@100;400&display=swap');
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .journey{
@@ -70,23 +70,66 @@ body{
 
 
 .popular-collection{
-    padding:2% 6%;
+    padding:2% 10%;
     margin: 5% 0px;
 }
 .popular-collection .container .products{
 display: grid;
-grid-template-columns: (3,1fr);
+grid-template-columns:repeat(3,1fr);
+grid-gap: 10px;
 align-items: center;
-justify-content: center;
+justify-items: center;
+/* justify-content: space-between; */
 }
 .popular-collection .product{
     padding: 15px;
     width: 329px;
     height: 476px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     
 }
 .popular-collection .product .title-img img{
-width: 300px;
+width: 100%;
 height: 256px;
 border-radius: 5px;
+}
+
+.popular-collection .product .product-title{
+    color: #18191F;
+    font-weight: 800;
+    font-size: 28px;
+    font-style: normal;
+    margin: 10px 0px;
+}
+.popular-collection .product .price{
+    font-style: normal;
+    font-size: 24px;
+}
+.popular-collection .product .details{
+    font-style: normal;
+    font-size: 14px;
+    color: #787885;
+}
+.popular-collection .product .ratings{
+display: flex;
+align-items: center;
+padding: 8px 2px;
+
+}
+.popular-collection .product .ratings .fa-star{
+    color: #FB8200;
+   font-size: 12px;
+   padding: 2px;
+}
+
+.popular-collection .product .ratings .rating{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;;
+    font-style: normal;
+    margin-left: 8px;
+    color: #5E6366;
+
 }
